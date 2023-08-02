@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg bg-body-secondary">
+  <div class="container-fluid">
+    <a routerLink="/" class="navbar-brand">
+      <img [src]="url" alt="Logo" width="200" height="50" class="d-inline-block align-text-top" />
+    </a>
+    <button class="navbar-toggler text-primary mx-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark "  tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title mx-5" id="offcanvasDarkNavbarLabel">
+          <img [src]="url" alt="Logo" width="200" height="54" class="d-inline-block align-text-top" />
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <ul class="navbar-nav me-auto mb-lg-0 mx-5 text-light-emphasis text-uppercase fw-bold">
+        <li class="nav-item">
+          <a class="nav-link active text-light-emphasis " aria-current="page" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light-emphasis text-white-50" routerLink="/education">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light-emphasis text-white-50" routerLink="/project">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
